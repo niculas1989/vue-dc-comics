@@ -1,9 +1,13 @@
 #upper-footer {
   height: 300px;
+  width: 100%;
   background-image: url(../assets/img/footer-bg.jpg);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 #bottom-footer {

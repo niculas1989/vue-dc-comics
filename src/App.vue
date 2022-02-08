@@ -20,6 +20,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/sass/utility.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -39,19 +41,5 @@ a {
 body {
   background-color: #000;
   min-height: 100vh;
-}
-
-//! UTILITY
-.container {
-  margin: 0 auto;
-  width: 1150px;
-}
-
-.main-color {
-  color: #0082f9;
-}
-
-.main-text {
-  color: #5a646b;
 }
 </style>

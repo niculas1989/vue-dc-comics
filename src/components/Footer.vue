@@ -1,50 +1,52 @@
 <template>
   <div>
-    <div id="upper-footer" class="container">
-      <div class="col">
-        <div>
-          <h4>DC COMICS</h4>
+    <div id="upper-footer">
+      <section class="container">
+        <div class="col">
+          <div>
+            <h4>DC COMICS</h4>
+            <ul>
+              <li v-for="link in firstLinks" :key="link.text">
+                <a href="#">{{ link.text }}</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>SHOP</h4>
+            <ul>
+              <li v-for="link in secondLinks" :key="link.text">
+                <a href="#">{{ link.text }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <h4>DC</h4>
           <ul>
-            <li v-for="link in firstLinks" :key="link.text">
-              <a href="#">{{ link.text }}</a>
-            </li>
+            <li><a href="#">Terme Of Use</a></li>
+            <li><a href="#">Privacy policy (New)</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Ad Choices</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Talent Workshops</a></li>
+            <li><a href="#">CPSC Certificates</a></li>
+            <li><a href="#">Ratings</a></li>
+            <li><a href="#">Shop Help</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-        <div>
-          <h4>SHOP</h4>
+        <div class="col">
+          <h4>SITES</h4>
           <ul>
-            <li v-for="link in secondLinks" :key="link.text">
-              <a href="#">{{ link.text }}</a>
-            </li>
+            <li><a href="#">DC</a></li>
+            <li><a href="#">MAD Magazine</a></li>
+            <li><a href="#">DC Kids</a></li>
+            <li><a href="#">DC Universe</a></li>
+            <li><a href="#">DC Pover Visa</a></li>
           </ul>
         </div>
-      </div>
-      <div class="col">
-        <h4>DC</h4>
-        <ul>
-          <li><a href="#">Terme Of Use</a></li>
-          <li><a href="#">Privacy policy (New)</a></li>
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">Ad Choices</a></li>
-          <li><a href="#">Advertising</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Talent Workshops</a></li>
-          <li><a href="#">CPSC Certificates</a></li>
-          <li><a href="#">Ratings</a></li>
-          <li><a href="#">Shop Help</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="col">
-        <h4>SITES</h4>
-        <ul>
-          <li><a href="#">DC</a></li>
-          <li><a href="#">MAD Magazine</a></li>
-          <li><a href="#">DC Kids</a></li>
-          <li><a href="#">DC Universe</a></li>
-          <li><a href="#">DC Pover Visa</a></li>
-        </ul>
-      </div>
+      </section>
     </div>
 
     <div id="bottom-footer">
