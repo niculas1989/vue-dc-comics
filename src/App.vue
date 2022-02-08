@@ -29,6 +29,13 @@ a {
 }
 
 body {
+  background-color: #000;
   min-height: 100vh;
+}
+
+//! UTILITY
+.container {
+  margin: 0 auto;
+  width: 1150px;
 }
 </style>
