@@ -1,10 +1,13 @@
 <template>
-  <div>piccola prova</div>
+  <Header />
 </template>
 
 <script>
+import Header from "./components/Header.vue";
 export default {
-  components: {},
+  components: {
+    Header,
+  },
 };
 </script>
 
