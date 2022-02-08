@@ -1,7 +1,7 @@
 <template>
   <header>
     <figure>
-      <img src="" alt="" />
+      <img src="../assets/img/dc-logo.png" alt="" />
     </figure>
     try
   </header>
