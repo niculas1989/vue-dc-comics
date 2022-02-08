@@ -1,4 +1,19 @@
 header {
-    display: flex;
-    justify-content: space-between;
+  background-color: white;
+}
+
+#nav {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  li {
+    display: inline-block;
+    a {
+      margin: 0 10px;
+    }
+  }
 }

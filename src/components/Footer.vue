@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div id="upper-footer">
-      <div class="container">
+    <div id="upper-footer" class="container">
+      <div>
         <div>
           <h4>DC COMICS</h4>
           <ul>

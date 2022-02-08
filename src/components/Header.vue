@@ -6,16 +6,9 @@
           <img src="../assets/img/dc-logo.png" alt="" />
         </figure>
         <ul>
-          <li><a href="#">Characters</a></li>
-          <li><a href="#">COMICS</a></li>
-          <li><a href="#">MOVIES</a></li>
-          <li><a href="#">TV</a></li>
-          <li><a href="#">GAMES</a></li>
-          <li><a href="#">COLLECTIBLES</a></li>
-          <li><a href="#">VIDEOS</a></li>
-          <li><a href="#">FANS</a></li>
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">SHOP</a></li>
+          <li v-for="link in links" :key="link.text">
+            <a href="#">{{ link.text }}</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -23,27 +16,25 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      links: [
+        { text: "Characters", url: "#", active: false },
+        { text: "Movies", url: "#", active: true },
+        { text: "Tv", url: "#", active: false },
+        { text: "Games", url: "#", active: false },
+        { text: "Collectibles", url: "#", active: false },
+        { text: "Videos", url: "#", active: false },
+        { text: "Fans", url: "#", active: false },
+        { text: "News", url: "#", active: false },
+        { text: "Shop", url: "#", active: false },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped lang="scss">
-header {
-  background-color: white;
-}
-
-#nav {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-ul {
-  li {
-    display: inline-block;
-    a {
-      margin: 0 10px;
-    }
-  }
-}
+@import "../assets/sass/common.scss";
 </style>
