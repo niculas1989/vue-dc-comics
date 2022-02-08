@@ -5,20 +5,17 @@
         <div>
           <h4>DC COMICS</h4>
           <ul>
-            <li><a href="#">Charatcters</a></li>
-            <li><a href="#">Comics</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">TV</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">News</a></li>
+            <li v-for="link in firstLinks" :key="link.text">
+              <a href="#">{{ link.text }}</a>
+            </li>
           </ul>
         </div>
         <div>
           <h4>SHOP</h4>
           <ul>
-            <li><a href="#">Shop DC</a></li>
-            <li><a href="#">Shop DC Collectibles</a></li>
+            <li v-for="link in secondLinks" :key="link.text">
+              <a href="#">{{ link.text }}</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -69,7 +66,25 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      firstLinks: [
+        { text: "Characters", url: "#", active: false },
+        { text: "Movies", url: "#", active: true },
+        { text: "Tv", url: "#", active: false },
+        { text: "Games", url: "#", active: false },
+        { text: "Collectibles", url: "#", active: false },
+        { text: "Videos", url: "#", active: false },
+        { text: "News", url: "#", active: false },
+      ],
+      secondLinks: [
+        { text: "Shop DC", url: "#", active: false },
+        { text: "Shop DC Collectibles", url: "#", active: true },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped lang="scss">
