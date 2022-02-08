@@ -36,5 +36,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/sass/common.scss";
+@import "../assets/sass/_header.scss";
 </style>

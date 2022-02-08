@@ -50,4 +50,8 @@ body {
 .main-color {
   color: #0082f9;
 }
+
+.main-text {
+  color: #5a646b;
+}
 </style>

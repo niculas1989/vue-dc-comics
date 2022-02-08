@@ -15,19 +15,6 @@
 export default {};
 </script>
 
-<style>
-#content {
-  background-color: black;
-  color: white;
-  height: 100px;
-  display: flex;
-  align-items: center;
-}
-
-#blue-content {
-  background-color: #0082f9;
-  height: 100px;
-  display: flex;
-  align-items: center;
-}
+<style scoped lang="scss">
+@import "../assets/sass/common.scss";
 </style>
