@@ -46,4 +46,8 @@ body {
   margin: 0 auto;
   width: 1150px;
 }
+
+.main-color {
+  color: #0082f9;
+}
 </style>
