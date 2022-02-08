@@ -12,3 +12,18 @@
   display: flex;
   align-items: center;
 }
+
+#merchandising {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  img {
+    height: 40px;
+  }
+}
