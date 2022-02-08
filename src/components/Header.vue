@@ -3,7 +3,9 @@
     <figure>
       <img src="../assets/img/dc-logo.png" alt="" />
     </figure>
-    try
+    <ul>
+      <li><a href="#">Characters</a></li>
+    </ul>
   </header>
 </template>
 
@@ -11,5 +13,9 @@
 export default {};
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
+header {
+  display: flex;
+  justify-content: space-between;
+}
 </style>
