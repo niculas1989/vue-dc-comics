@@ -2,7 +2,13 @@
   <div>
     <jumbotron id="content">
       <div class="container">
-        <section id="comics"></section>
+        <section id="comics" class="d-flex flex-wrap">
+          <div class="row">
+            <div v-for="(comic, index) in comics" :key="index" class="col-2">
+              <img :src="comic.thumb" alt="comic.series" class="h-100 p-3" />
+            </div>
+          </div>
+        </section>
       </div>
     </jumbotron>
     <div>
