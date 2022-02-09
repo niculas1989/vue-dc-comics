@@ -1,7 +1,9 @@
 <template>
   <div>
     <jumbotron id="content">
-      <div class="container">CONTENT GOES HERE</div>
+      <div class="container">
+        <section id="comics"></section>
+      </div>
     </jumbotron>
     <div>
       <div id="blue-content">
