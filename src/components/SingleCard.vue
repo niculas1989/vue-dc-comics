@@ -1,6 +1,9 @@
 <template>
   <div>
-    <img :src="comic.thumb" alt="comic.series" class="h-100 p-3" />
+    <div class="text-center">
+      <img :src="comic.thumb" class="card-img-top m-3" :alt="comic.series" />
+      <p class="">{{ comic.series.toUpperCase() }}</p>
+    </div>
   </div>
 </template>
 
@@ -11,4 +14,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+img {
+  height: 230px;
+  width: 230px;
+}
+
+p {
+  color: white;
+}
 </style>
