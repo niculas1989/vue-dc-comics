@@ -5,9 +5,12 @@
       <div class="container">
         <section id="comics" class="d-flex flex-wrap">
           <div class="row">
-            <div v-for="(comic, index) in comics" :key="index" class="col-2">
-              <img :src="comic.thumb" alt="comic.series" class="h-100 p-3" />
-            </div>
+            <SingleCard
+              v-for="(comic, index) in comics"
+              :comic="comic"
+              :key="index"
+              class="col-2"
+            />
           </div>
         </section>
       </div>
@@ -54,7 +57,11 @@
 </template>
 
 <script>
+import SingleCard from "./SingleCard.vue";
 export default {
+  components: {
+    SingleCard,
+  },
   data() {
     return {
       comics: [
