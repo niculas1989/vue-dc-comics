@@ -1,6 +1,7 @@
 <template>
   <div>
-    <jumbotron id="content">
+    <jumbotron id="content w-100">
+      <div id="top-jumbotron" class="w-100"></div>
       <div class="container">
         <section id="comics" class="d-flex flex-wrap">
           <div class="row">
@@ -149,4 +150,11 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/sass/common.scss";
+#top-jumbotron {
+  height: 400px;
+  background-image: url(../assets/img/jumbotron.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
